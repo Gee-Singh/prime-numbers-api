@@ -35,7 +35,7 @@ public class PrimeNumberServiceTest {
     @Test
     public void givenValidLimitNumber_whenServerIsCalled_thenReturnResponseData() {
 
-        List<Integer> primeCollection = Arrays.asList(2, 3, 7, 11);
+        List<Integer> primeCollection = Arrays.asList(2, 3, 5, 7, 11);
         PrimeNumber primeNumber = new PrimeNumber();
         primeNumber.setInitial(11);
         primeNumber.setPrimes(primeCollection);
@@ -46,7 +46,7 @@ public class PrimeNumberServiceTest {
         Assert.assertTrue(primeNumberService.findPrimeNumbers(11).getInitial() == 11);
 
         // check prime collection is valid
-        Assert.assertTrue(primeNumberService.findPrimeNumbers(11).getPrimes().containsAll(Arrays.asList(2,3,7,11)));
+        Assert.assertTrue(primeNumberService.findPrimeNumbers(11).getPrimes().containsAll(Arrays.asList(2,3,5,7,11)));
 
     }
 
