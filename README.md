@@ -21,7 +21,7 @@ This project is a RestFul API to find prime numbers for a given limit.
 
 # Running Locally :
 
- - Simply run the Application main method or use mvn clean build and mvn spring-boot:run commands to start the project
+ - Simply run the Application main method or use mvn clean install and mvn spring-boot:run commands to start the project
  - Once its up and running please navigate to http://localhost:8080/swagger-ui.html page
  - Click on PrimeNumberController and you will find get api request details [/primes/{limit}]
  - Click on try-it-out button and enter upper limit value [example : 100]
@@ -46,6 +46,6 @@ This project is a RestFul API to find prime numbers for a given limit.
 # Java Code Coverage - Unit Tests 
 
  - This API has been tested using fully integrated the unit test framework
- - when you run mvn clean build, it will run the test and generate a code coverage report in target folder
+ - when you run mvn clean install, it will run the test and generate a code coverage report in target folder
  - Navigate to /target/site/jacoco/index.html in the browser to check the 100% code overage
 
